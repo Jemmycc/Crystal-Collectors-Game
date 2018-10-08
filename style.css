@@ -1,0 +1,283 @@
+<style>
+    .row {
+        box-sizing: border-box;
+}
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        background-image: url("./images/bg01.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        background: #4a9caa;
+        padding: 15px;
+        margin-bottom: 10px;
+        position: fixed;
+        font-family: 'Life Savers', cursive;
+        color: #fff;
+        letter-spacing: 8px;
+        text-align: center;
+        position: relative; 
+    }
+
+
+
+    h1 {
+        font-size:88px;
+        padding: 20px;
+        font-weight: 900;
+    }
+
+
+    h3 {
+        padding: 20px;
+        padding-bottom: 5px;
+        margin-left: 20px;
+        border-bottom: #ddd solid 2px;
+        text-align: left;
+        font-weight: 700;
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-family: 'Julius Sans One', sans-serif;
+    }
+
+    p {
+        line-height: 30px;
+        font-size: 18px;
+        color: rgb(86, 87, 88);
+        letter-spacing: 0.2px;
+        padding: 10px;
+        padding-bottom: 2px;
+        margin-left: 130px;
+        font-weight: 500;
+    }
+
+    img {
+        padding:10px;
+        align-self: center;
+        width: 220px;
+    }
+
+  #image-buttons {
+        margin-left: 75px;
+        margin-top: 20px;
+    }
+
+#content {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    background-color:rgba(197, 231, 248, 0.7);
+    margin: 10px;
+    margin-left: 100px;
+    padding: 30px;
+    overflow: auto;
+}
+
+#win-lose, #total-score-title, #random-number-title {
+    font-family: 'Julius Sans One', sans-serif;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+#random-number-title {
+    float: left;
+    width: 420px;
+    height: 100px;
+    background: #fff;
+    margin: 30px; 
+    margin-left: 92px;
+}
+
+#total-score-title {
+    float: left;
+    width: 420px;
+    height: 100px;
+    background: #fff;
+    margin: 30px; 
+    margin-left: 92px;
+}
+
+span {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+#random-number {
+    display: inline-block;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bolder;
+}
+
+#total-score {
+    display: inline-block;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bolder;
+}
+#wins{
+    margin-left: 220px;
+    font-size: 60px;
+    color: #4a9caa;
+
+}
+#losses {
+    margin-left: 220px;
+    font-size: 60px;
+    color: #4a9caa;
+}
+
+#win-lose {
+   position: relative;
+   float: left;
+    width: 1000px;
+    height: auto;
+    background-color: rgba(190, 191, 192, 0.5);
+    margin: 20px 50px;
+    margin-left: 78px;
+}
+
+#wins-title {
+    position: relative;
+    float: left;
+    width: 350px;
+    height: 150px;
+    padding: 10px, 60px, 10px, 10px;
+    background: #fff;
+    margin: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#loses-title {
+    position: relative;
+    float: left;
+    width: 350px;
+    height: 150px;
+    background: #fff;
+    margin: 30px;
+    padding: 10px, 60px, 10px, 10px;
+    margin-left: 70px; 
+}
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+    footer {
+        background: #4a9caa;
+        color: #ccc;
+        font-size: 10px;
+        letter-spacing: 2px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        margin-top: 30px;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+
+    .cc {
+        position: absolute;
+        width: 180px;
+        height: auto;
+    }
+    .c-one {
+        top: -15px;
+        left: 1px;
+    }
+    .c-two {
+            top: -50px;
+            left: 120px;
+        }
+    .c-three {
+        top: -30px;
+        right: 20%;
+    }
+    .c-four {
+        top: -10px;
+        right: 12%;
+    }
+
+    .c-one {
+    -webkit-animation-name: ex1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+    animation-name: ex1;
+    animation-duration: 1.5s;
+    animation-delay: 0.2s;
+}
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes ex1 {
+        0%   {left: 1px; top: -15px;}
+        100% {opacity: 0; left:0px; top: 700px;}
+    }
+    /* Standard syntax */
+    @keyframes ex1 {
+        0%   {left: 1px; top:-15px;}
+        100% {opacity: 0; left: 0px; top: 700px;}
+    }
+
+    .c-two {
+    -webkit-animation-name: ex2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.3s; /* Safari 4.0 - 8.0 */
+    animation-name: ex2;
+    animation-duration: 1.3s;
+}
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes ex2 {
+        0%   {left: 120px; top:-50px;}
+        100% {opacity: 0; left: 120px; top:600px;}
+    }
+    /* Standard syntax */
+    @keyframes ex2 {
+        0%   {left: 120px; top: -50px;}
+        100% {opacity: 0; left: 120px; top: 600px;}
+    }
+
+    .c-three {
+    -webkit-animation-name: ex3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.4s; /* Safari 4.0 - 8.0 */
+    animation-name: ex3;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+}
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes ex3 {
+        0%   {right: 20%; top:-30px;}
+        100% {opacity: 0; right: 20%; top:650px;}
+    }
+    /* Standard syntax */
+    @keyframes ex3 {
+        0%   {right: 20%; top:-30px;}
+        100% {opacity: 0; right: 20%; top: 650px;}
+    }
+
+    .c-four {
+    -webkit-animation-name: ex4; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.3s; /* Safari 4.0 - 8.0 */
+    animation-name: ex4;
+    animation-duration: 1.3s;
+}
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes ex4 {
+        0%   {top: -10px; right: 12%;}
+        100% {opacity: 0; right: 12%; top:650px;}
+    }
+    /* Standard syntax */
+    @keyframes ex4 {
+        0%   {top: -10px; right: 12%;}
+        100% {opacity: 0; right: 12%; top: 650px;}
+    }
+
+
+</style>
