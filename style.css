@@ -80,13 +80,13 @@
     overflow: auto;
 }
 
-#win-lose, #total-score-title, #random-number-title {
+#win-lose, #total-score-title, #target-number-title {
     font-family: 'Julius Sans One', sans-serif;
     padding-top: 10px;
     font-weight: 600;
 }
 
-#random-number-title {
+#target-number-title {
     float: left;
     width: 420px;
     height: 100px;
@@ -109,7 +109,7 @@ span {
     font-weight: bolder;
     letter-spacing: 5px;
 }
-#random-number {
+#target-number {
     display: inline-block;
     font-family: 'Advent Pro', sans-serif;
     font-weight: bolder;
